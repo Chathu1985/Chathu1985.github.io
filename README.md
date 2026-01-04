@@ -1,2 +1,2 @@
-# Chathu1985.github.io
+# Chathurika Thilakarathna
 GIS &amp; Geospatial Research Portfolio
