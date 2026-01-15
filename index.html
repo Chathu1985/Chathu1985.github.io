@@ -48,34 +48,48 @@
     .topbar{
       position: sticky;
       top: 0;
-      z-index: 50;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding: 12px 18px;
-      background: rgba(10,12,16,.55);
+      z-index: 999;
+      width: 100%;
+      background: rgba(20,20,20,.75);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(255,255,255,.12);
     }
 
-    .topbar .brand{
-      font-weight: 700;
-      text-decoration:none;
-      color: #fff;
-      letter-spacing: .2px;
+    .topbar-inner{
+      width: min(var(--max), 100%);
+      margin: 0 auto;
+      padding: 12px 18px;
+      display:flex;
+      align-items:center;
+      gap: 18px;
     }
 
-    .topbar .nav a{
-      color: rgba(255,255,255,.9);
+    .brand{
+      color:#fff;
       text-decoration:none;
-      margin-left: 14px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .nav{
+       display:flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a{
+      color: rgba(255,255,255,.88);
+      text-decoration:none;
       font-size: 14px;
+      font-weight: 600;
+      padding: 8px 6px;
     }
 
-    .topbar .nav a:hover{
+    .nav a:hover{
       color:#fff;
       text-decoration: underline;
     }
+
 
 
     /* --------- HERO (Cover page) --------- */
@@ -330,6 +344,21 @@
 </head>
 
 <body>
+  <header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">CT</a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#work">Work Experience</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects & Analysis</a>
+      <a href="#applied">Applied Work</a>
+      <a href="#contact">Contacts</a>
+    </nav>
+  </div>
+</header>
 
   <!-- COVER PAGE -->
   <section class="hero" id="top">
