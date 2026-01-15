@@ -8,6 +8,10 @@
 
 
   <style>
+    body{
+  padding-top: var(--navH);
+}
+
     html{
       scroll-behavior: smooth;
     }
@@ -34,23 +38,13 @@
       line-height: 1.6;
     }
     
-    <header class="topbar">
-      <a class="brand" href="#top">Chathurika</a>
-
-        <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
+    
     .topbar{
-      position: sticky;
+      position: fixed;
       top: 0;
-      z-index: 999;
+      z-index: 9999;
       width: 100%;
-      background: rgba(20,20,20,.75);
+      background: rgba(20,20,20,.78);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(255,255,255,.12);
     }
@@ -385,18 +379,7 @@
 
 
   <!-- STICKY NAV (appears after cover when scrolling) -->
-  <nav class="nav" aria-label="Section navigation">
-    <div class="nav-inner">
-      <div class="brand">CT</div>
-      <a href="#about" data-nav>About</a>
-      <a href="#experience" data-nav>Work Experience</a>
-      <a href="#education" data-nav>Education</a>
-      <a href="#research" data-nav>Research</a>
-      <a href="#projects" data-nav>Projects & Analysis</a>
-      <a href="#applied" data-nav>Applied Work</a>
-      <a href="#contact" data-nav>Contacts</a>
-    </div>
-  </nav>
+
   </section>
   <main>
     <section id="about">
