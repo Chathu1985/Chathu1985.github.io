@@ -184,7 +184,7 @@
     
     .scroll-cue{
       position: absolute;
-      bottom: 80px;
+      bottom: 100px;
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
@@ -193,6 +193,12 @@
       opacity: 0.85;
       letter-spacing: 0.06em;
       cursor: pointer;
+    }
+
+    .scroll-icon{
+      font-size: 1em;
+      margine-left: 6px;
+      vertical-align: middle;
     }
 
     .scroll-cue .arrow{
@@ -363,7 +369,7 @@
       
       <div class="scroll-cue" 
            onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">
-        <span>Scroll down to explore</span>
+        <span>Scroll down to explore<span class="scroll-icon">👇</span></span>
       </div>
 
 
